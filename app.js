@@ -31,6 +31,7 @@ const req = http.request(options, (res) => {
     if (containers && containers.length > 0) {
       // console.log(containers[0].Ports)
       console.log(containers[0])
+      console.log(containers[0].NetworkSettings)
       const containerId = containers[0].Id; // Get the ID of the first container
       console.log(`Container ID: ${containerId}`);
     } else {
